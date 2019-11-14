@@ -75,10 +75,10 @@ light
  <v-text-field label="Name*" v-model="form.name" required></v-text-field>
  </v-col>
  <v-col cols="12">
- <v-text-field label="Email*" vmodel="form.email" required></v-text-field>
+ <v-text-field label="Email*" v-model="form.email" required></v-text-field>
  </v-col>
  <v-col cols="12">
- <v-text-field label="Password*" vmodel="form.password" type="password" required></v-text-field>
+ <v-text-field label="Password*" v-model="form.password" type="password" required></v-text-field>
  </v-col>
  </v-row>
  </v-container>

@@ -72,6 +72,7 @@
  drawer: null,
  items: [
  { title: 'User Controller', icon: 'mdi-human-male' },
+ { title: 'Vehicles', icon: 'mbi-car-male' },
  ],
  }
  },

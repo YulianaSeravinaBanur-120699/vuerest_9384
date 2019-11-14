@@ -6,17 +6,22 @@ function loadView(view) {
 [request]" */ `../components/dashboardContents/${view}.vue`)
 }
 const routes = [
- {
- path: '/',
- component: DashboardLayout,
- children: [
- {
- name: 'UserController',
- path: '',
- component: loadView('userController')
- }
- ]
- },
+    {
+        path: '/',
+        component: DashboardLayout,
+        children: [
+        {
+            name: 'UserController',
+            path: '',
+            component: loadView('userController')
+        },
+        {
+            name: 'Kendaraan',
+            path: '',
+            component: loadView('kendaraan')
+        }
+        ]
+    },
  ]
  Vue.use(Router)
  const router = new Router({mode: 'history', routes: routes})
